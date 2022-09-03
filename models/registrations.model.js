@@ -1,6 +1,6 @@
-const { DataTypes, db } = require('../utils/database.util');
+const { DataTypes, db } = require("../utils/database.util");
 
-const Registrations = db.define('registrations', {
+const Registrations = db.define("registrations", {
   id: {
     type: DataTypes.INTEGER,
     primaryKey: true,
@@ -14,12 +14,11 @@ const Registrations = db.define('registrations', {
   exitTime: {
     type: DataTypes.DATE,
     allowNull: true,
-    unique: true,
   },
   status: {
     type: DataTypes.STRING,
     allowNull: false,
-    defaultValue: 'working',
+    defaultValue: "working",
   },
 });
 
